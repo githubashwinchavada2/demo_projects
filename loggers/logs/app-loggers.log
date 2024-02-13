@@ -1,0 +1,50 @@
+2023-12-15 17:19:16.113  INFO 21312 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication using Java 11.0.15 on Ashwin-DESKTOP-89R6KLU with PID 21312 (C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\loggers\target\classes started by ashwin in C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\loggers)
+2023-12-15 17:19:16.117  INFO 21312 --- [main] com.springboot.demo.DemoApplication      : The following 1 profile is active: "dev"
+2023-12-15 17:19:16.713  INFO 21312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 17:19:16.763  INFO 21312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-12-15 17:19:17.306  INFO 21312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-15 17:19:17.318  INFO 21312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-15 17:19:17.319  INFO 21312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2023-12-15 17:19:17.440  INFO 21312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-15 17:19:17.441  INFO 21312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1269 ms
+2023-12-15 17:19:17.661  INFO 21312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 17:19:17.742  INFO 21312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-15 17:19:17.985  INFO 21312 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 17:19:18.118  INFO 21312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 17:19:18.307  INFO 21312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 17:19:18.330  INFO 21312 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-12-15 17:19:19.004  INFO 21312 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 17:19:19.015  INFO 21312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 17:19:19.393  WARN 21312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 17:19:19.855  INFO 21312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1693d505, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d195d15, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c65f2e1, org.springframework.security.web.header.HeaderWriterFilter@66576bd2, org.springframework.security.web.csrf.CsrfFilter@106f2425, org.springframework.security.web.authentication.logout.LogoutFilter@4be1c797, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e322108, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2eafb4e7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@17b387ef, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c3ae369, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78f1d29, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76c85485, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@489b7559, org.springframework.security.web.session.SessionManagementFilter@7f09ff10, org.springframework.security.web.access.ExceptionTranslationFilter@5e8e02a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@215404a1]
+2023-12-15 17:19:19.932  INFO 21312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-15 17:19:19.940  INFO 21312 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 4.294 seconds (JVM running for 5.33)
+2023-12-15 17:19:26.834  INFO 21312 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15 17:19:26.834  INFO 21312 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-15 17:19:26.837  INFO 21312 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-15 17:19:27.269  WARN 21312 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [147] milliseconds.
+2023-12-15 17:19:27.474 DEBUG 21312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_0_,
+        user0_.email_id as email_id2_0_,
+        user0_.password as password3_0_,
+        user0_.role as role4_0_,
+        user0_.user_name as user_nam5_0_ 
+    from
+        user user0_ 
+    where
+        user0_.email_id=?
+2023-12-15 17:19:27.485 TRACE 21312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a@a.com]
+2023-12-15 17:19:27.585  INFO 21312 --- [http-nio-8080-exec-2] c.s.demo.logger.LoggingFilterConfig      : ----------------------------------------------------------------------------------------------------
+2023-12-15 17:19:30.565  INFO 21312 --- [http-nio-8080-exec-2] c.s.demo.logger.LoggingFilterConfig      : Log Request::: 
+Method: [GET]
+URL: [http://localhost:8080/user/get-user]
+Parameters: [emailId=a@a.com]
+Body: [{
+    "emailId": "u@u.com",
+    "password": "user"
+}]
+2023-12-15 17:19:30.566  INFO 21312 --- [http-nio-8080-exec-2] c.s.demo.logger.LoggingFilterConfig      : ----------------------------------------------------------------------------------------------------
+2023-12-15 17:19:30.567  INFO 21312 --- [http-nio-8080-exec-2] c.s.demo.logger.LoggingFilterConfig      : Log Response::: 
+Body: [{"userId":2,"userName":"admin","password":"$2a$10$oZIy0FpavrnXCfZ38.zSBeZEryywReVrxIl8bYjG73IkdT5CxUPbO","emailId":"a@a.com","role":"ROLE_ADMIN"}]
+2023-12-15 17:19:30.571  INFO 21312 --- [http-nio-8080-exec-2] c.s.demo.logger.LoggingFilterConfig      : ----------------------------------------------------------------------------------------------------

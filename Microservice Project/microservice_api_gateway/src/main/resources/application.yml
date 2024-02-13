@@ -1,0 +1,52 @@
+# Changing server port
+server:
+  port: 8081
+
+# Configuration for microservice service registry (eureka server)
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true # by default it will be true even if don't write this line
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8080/eureka
+
+spring:
+
+# Configuration for Application Name (this name will be displayed in microservice's eureka server as a service)
+  application:
+    name: API-GATEWAY
+
+# Configuration to use centralized configuration (yml) file from Config Server (GitHub)
+  config:
+    import: optional:configserver:http://localhost:8082
+
+# Configuration for API Gateway in microservice
+  cloud:
+    gateway:
+      routes:
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user/**
+
+        - id: HOTEL-SERVICE
+          uri: lb://HOTEL-SERVICE
+          predicates:
+            - Path=/hotel/**, /staff/**    # /**
+            # if you want to call all endpoint of this service then use: /** only
+
+        - id: RATING-SERVICE
+          uri: lb://RATING-SERVICE
+          predicates:
+            - Path=/rating/**
+
+# Configuration for OKTA for API Gateway in microservice
+okta:
+  oauth2:
+    issuer: https://dev-45361875.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oaec0bmiaaKBFkUs5d7
+    client-secret: Yrp_VmGO_uS49IJ9o8kmA1cGm4IFT-IOc-owQd4lHAbu0glduQiMgR0f1HbSOZbK
+    scopes: openid, profile, email, offline_access

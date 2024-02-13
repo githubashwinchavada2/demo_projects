@@ -1,0 +1,124 @@
+2023-12-16 15:44:27.042  INFO 11844 --- [main] com.springboot.demo.DemoApplication      : Starting DemoApplication using Java 11.0.15 on Ashwin-DESKTOP-89R6KLU with PID 11844 (C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\security_with_db_auth_and_jwt_token_and_swagger_3\target\classes started by ashwin in C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\security_with_db_auth_and_jwt_token_and_swagger_3)
+2023-12-16 15:44:27.048  INFO 11844 --- [main] com.springboot.demo.DemoApplication      : The following 1 profile is active: "dev"
+2023-12-16 15:44:27.905  INFO 11844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 15:44:27.970  INFO 11844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2023-12-16 15:44:28.616  INFO 11844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-16 15:44:28.626  INFO 11844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-16 15:44:28.626  INFO 11844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2023-12-16 15:44:28.744  INFO 11844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-16 15:44:28.745  INFO 11844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1643 ms
+2023-12-16 15:44:28.940  INFO 11844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 15:44:29.001  INFO 11844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-16 15:44:29.175  INFO 11844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-16 15:44:29.287  INFO 11844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-16 15:44:29.488  INFO 11844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-16 15:44:29.520  INFO 11844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-12-16 15:44:30.241  INFO 11844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-16 15:44:30.253  INFO 11844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 15:44:31.002  WARN 11844 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 15:44:31.378  INFO 11844 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@89dd102, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b826482, org.springframework.security.web.context.SecurityContextPersistenceFilter@190cc39e, org.springframework.security.web.header.HeaderWriterFilter@65c66fc4, org.springframework.web.filter.CorsFilter@3f908a10, org.springframework.security.web.authentication.logout.LogoutFilter@6109366a, com.springboot.demo.security.config.JwtAuthenticationFilter@643a73fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30b075b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48b1b469, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15e748b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@153c69bc, org.springframework.security.web.session.SessionManagementFilter@4f239a76, org.springframework.security.web.access.ExceptionTranslationFilter@174d5cf7, org.springframework.security.web.access.intercept.AuthorizationFilter@41bc501b]
+2023-12-16 15:44:31.707  INFO 11844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-16 15:44:31.920  INFO 11844 --- [main] com.springboot.demo.DemoApplication      : Started DemoApplication in 5.449 seconds (JVM running for 6.584)
+2023-12-16 15:44:37.109  INFO 11844 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 15:44:37.110  INFO 11844 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-16 15:44:37.112  INFO 11844 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-16 15:44:37.138  INFO 11844 --- [http-nio-8080-exec-2] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:44:37.138  INFO 11844 --- [http-nio-8080-exec-2] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:44:37.294  INFO 11844 --- [http-nio-8080-exec-3] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:44:37.294  INFO 11844 --- [http-nio-8080-exec-3] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:44:37.376  INFO 11844 --- [http-nio-8080-exec-1] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:44:37.376  INFO 11844 --- [http-nio-8080-exec-1] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:44:37.387  INFO 11844 --- [http-nio-8080-exec-5] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:44:37.387  INFO 11844 --- [http-nio-8080-exec-5] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:44:37.417  INFO 11844 --- [http-nio-8080-exec-4] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:44:37.417  INFO 11844 --- [http-nio-8080-exec-4] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:44:43.507  INFO 11844 --- [http-nio-8080-exec-6] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:44:43.507  INFO 11844 --- [http-nio-8080-exec-6] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:45:01.020  INFO 11844 --- [http-nio-8080-exec-7] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[null]
+2023-12-16 15:45:01.021  INFO 11844 --- [http-nio-8080-exec-7] c.s.d.s.config.JwtAuthenticationFilter   : Invalid Header Value!
+2023-12-16 15:45:01.111  INFO 11844 --- [http-nio-8080-exec-7] c.s.d.s.controller.AuthController        : Jwt Token Request[JwtTokenRequest(emailId=a@a.com, password=admin)]
+2023-12-16 15:45:01.572 DEBUG 11844 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.email_id as email_id2_1_,
+        user0_.password as password3_1_,
+        user0_.role as role4_1_,
+        user0_.user_name as user_nam5_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email_id=?
+2023-12-16 15:45:01.579 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a@a.com]
+2023-12-16 15:45:01.608 DEBUG 11844 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        refreshtok0_.id as id1_0_0_,
+        refreshtok0_.expiry as expiry2_0_0_,
+        refreshtok0_.refresh_token as refresh_3_0_0_,
+        refreshtok0_.user_id as user_id4_0_0_ 
+    from
+        refresh_token refreshtok0_ 
+    where
+        refreshtok0_.user_id=?
+2023-12-16 15:45:01.609 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2023-12-16 15:45:01.831 DEBUG 11844 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.email_id as email_id2_1_,
+        user0_.password as password3_1_,
+        user0_.role as role4_1_,
+        user0_.user_name as user_nam5_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email_id=?
+2023-12-16 15:45:01.837 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a@a.com]
+2023-12-16 15:45:01.924 DEBUG 11844 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.email_id as email_id2_1_,
+        user0_.password as password3_1_,
+        user0_.role as role4_1_,
+        user0_.user_name as user_nam5_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email_id=?
+2023-12-16 15:45:01.926 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a@a.com]
+2023-12-16 15:45:02.012 DEBUG 11844 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    update
+        refresh_token 
+    set
+        expiry=?,
+        refresh_token=?,
+        user_id=? 
+    where
+        id=?
+2023-12-16 15:45:02.019 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [2023-12-16T11:15:01.928074800Z]
+2023-12-16 15:45:02.026 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [ea6b5046-e7a3-4de2-8e6c-7526838988b7]
+2023-12-16 15:45:02.027 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [2]
+2023-12-16 15:45:02.027 TRACE 11844 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [11]
+2023-12-16 15:45:02.045  INFO 11844 --- [http-nio-8080-exec-7] c.s.d.s.controller.AuthController        : Jwt Token Response[JwtTokenResponse(jwtToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhQGEuY29tIiwiaWF0IjoxNzAyNzIxNzAxLCJleHAiOjE3MDI3MjM1MDF9.fQ4b6hQWaR1eNclARCJsE8sCCFLVOd-RkzCOucuFfrz-PgmqdYg8AX5Ef9HyQtgbLHX4ysKpUUCaiovxnJ-Iiw, refreshToken=ea6b5046-e7a3-4de2-8e6c-7526838988b7, username=a@a.com)]
+2023-12-16 15:45:22.870  INFO 11844 --- [http-nio-8080-exec-8] c.s.d.s.config.JwtAuthenticationFilter   : requestHeader[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhQGEuY29tIiwiaWF0IjoxNzAyNzIxNzAxLCJleHAiOjE3MDI3MjM1MDF9.fQ4b6hQWaR1eNclARCJsE8sCCFLVOd-RkzCOucuFfrz-PgmqdYg8AX5Ef9HyQtgbLHX4ysKpUUCaiovxnJ-Iiw]
+2023-12-16 15:45:22.971 DEBUG 11844 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.email_id as email_id2_1_,
+        user0_.password as password3_1_,
+        user0_.role as role4_1_,
+        user0_.user_name as user_nam5_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email_id=?
+2023-12-16 15:45:22.972 TRACE 11844 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [a@a.com]
+2023-12-16 15:45:22.975 DEBUG 11844 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        refreshtok0_.id as id1_0_0_,
+        refreshtok0_.expiry as expiry2_0_0_,
+        refreshtok0_.refresh_token as refresh_3_0_0_,
+        refreshtok0_.user_id as user_id4_0_0_ 
+    from
+        refresh_token refreshtok0_ 
+    where
+        refreshtok0_.user_id=?
+2023-12-16 15:45:22.976 TRACE 11844 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]

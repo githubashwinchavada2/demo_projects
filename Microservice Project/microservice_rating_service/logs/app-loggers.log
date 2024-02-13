@@ -1,0 +1,439 @@
+2024-01-05 10:39:30.736  INFO 11684 --- [main] c.r.service.RatingServiceApplication     : Starting RatingServiceApplication using Java 11.0.15 on Ashwin-DESKTOP-89R6KLU with PID 11684 (C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\Microservice Project\microservice_rating_service\target\classes started by ashwin in C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\Microservice Project\microservice_rating_service)
+2024-01-05 10:39:30.750  INFO 11684 --- [main] c.r.service.RatingServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-05 10:39:32.054  INFO 11684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-05 10:39:32.655  INFO 11684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 575 ms. Found 1 JPA repository interfaces.
+2024-01-05 10:39:33.117  INFO 11684 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1b9dbfb8-341b-375f-b62d-9796ca3787d3
+2024-01-05 10:39:33.627  INFO 11684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8030 (http)
+2024-01-05 10:39:33.639  INFO 11684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-05 10:39:33.639  INFO 11684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-01-05 10:39:33.855  INFO 11684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-05 10:39:33.856  INFO 11684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2992 ms
+2024-01-05 10:39:34.123  INFO 11684 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-05 10:39:34.216  INFO 11684 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-05 10:39:34.425  INFO 11684 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-05 10:39:34.561  INFO 11684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-05 10:39:34.805  INFO 11684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-05 10:39:34.836  INFO 11684 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-01-05 10:39:36.046  INFO 11684 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-05 10:39:36.061  INFO 11684 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-05 10:39:36.621  WARN 11684 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-05 10:39:37.450  INFO 11684 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-01-05 10:39:37.932  WARN 11684 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-01-05 10:39:38.091  INFO 11684 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-01-05 10:39:38.182  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-01-05 10:39:38.194  INFO 11684 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 10:39:38.248  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-01-05 10:39:38.250  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-01-05 10:39:38.250  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-01-05 10:39:38.251  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-01-05 10:39:38.251  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-01-05 10:39:38.252  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-01-05 10:39:38.252  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-01-05 10:39:38.940  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-01-05 10:39:38.944  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-01-05 10:39:38.948  INFO 11684 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-01-05 10:39:38.957  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1704431378955 with initial instances count: 2
+2024-01-05 10:39:38.960  INFO 11684 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RATING-SERVICE with eureka with status UP
+2024-01-05 10:39:38.961  INFO 11684 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1704431378961, current=UP, previous=STARTING]
+2024-01-05 10:39:38.965  INFO 11684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030: registering service...
+2024-01-05 10:39:39.017  INFO 11684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8030 (http) with context path ''
+2024-01-05 10:39:39.018  INFO 11684 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8030
+2024-01-05 10:39:39.057  INFO 11684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - registration status: 204
+2024-01-05 10:39:39.328  INFO 11684 --- [main] c.r.service.RatingServiceApplication     : Started RatingServiceApplication in 9.498 seconds (JVM running for 10.917)
+2024-01-05 10:44:38.263  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 10:49:38.283  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 10:54:38.296  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 10:54:49.426  INFO 11684 --- [http-nio-8030-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-05 10:54:49.428  INFO 11684 --- [http-nio-8030-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-05 10:54:49.518  INFO 11684 --- [http-nio-8030-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 90 ms
+2024-01-05 10:54:50.251 DEBUG 11684 --- [http-nio-8030-exec-1] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 10:54:50.281 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 10:56:09.334 DEBUG 11684 --- [http-nio-8030-exec-3] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 10:56:09.337 TRACE 11684 --- [http-nio-8030-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 10:58:38.681 DEBUG 11684 --- [http-nio-8030-exec-6] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 10:58:38.683 TRACE 11684 --- [http-nio-8030-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 10:58:42.837 DEBUG 11684 --- [http-nio-8030-exec-7] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.hotel_id=?
+2024-01-05 10:58:42.841 TRACE 11684 --- [http-nio-8030-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [51820987-685b-401c-a845-06abbc8ec488]
+2024-01-05 10:58:47.896 DEBUG 11684 --- [http-nio-8030-exec-8] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.hotel_id=?
+2024-01-05 10:58:47.896 TRACE 11684 --- [http-nio-8030-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [51820987-685b-401c-a845-06abbc8ec488]
+2024-01-05 10:59:38.306  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:00:20.228 DEBUG 11684 --- [http-nio-8030-exec-1] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_0_,
+        ratings0_.feedback as feedback2_0_0_,
+        ratings0_.hotel_id as hotel_id3_0_0_,
+        ratings0_.rating as rating4_0_0_,
+        ratings0_.user_id as user_id5_0_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.id=?
+2024-01-05 11:00:20.229 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [39d9243c-e992-4bd4-a757-09825e1e3a62]
+2024-01-05 11:00:20.307 DEBUG 11684 --- [http-nio-8030-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        micro_ratings
+        (feedback, hotel_id, rating, user_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-01-05 11:00:20.307 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [This is superb hotel]
+2024-01-05 11:00:20.314 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [b67249c9-5242-468f-bafb-ea672959e02d]
+2024-01-05 11:00:20.316 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [5]
+2024-01-05 11:00:20.324 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [0eedc082-2d17-48da-8665-3ab12673861f]
+2024-01-05 11:00:20.324 TRACE 11684 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [39d9243c-e992-4bd4-a757-09825e1e3a62]
+2024-01-05 11:01:14.341 DEBUG 11684 --- [http-nio-8030-exec-2] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:01:14.341 TRACE 11684 --- [http-nio-8030-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 11:01:20.113 DEBUG 11684 --- [http-nio-8030-exec-3] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:01:20.113 TRACE 11684 --- [http-nio-8030-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [0eedc082-2d17-48da-8665-3ab12673861f]
+2024-01-05 11:02:41.262 DEBUG 11684 --- [http-nio-8030-exec-5] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:02:41.263 TRACE 11684 --- [http-nio-8030-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [0eedc082-2d17-48da-8665-3ab12673861f]
+2024-01-05 11:04:38.324  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:09:38.332  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:12:57.774 DEBUG 11684 --- [http-nio-8030-exec-8] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:12:57.891 TRACE 11684 --- [http-nio-8030-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [0eedc082-2d17-48da-8665-3ab12673861f]
+2024-01-05 11:13:01.168 DEBUG 11684 --- [http-nio-8030-exec-9] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:13:01.168 TRACE 11684 --- [http-nio-8030-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 11:14:38.351  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:19:38.365  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:24:38.373  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:29:38.377  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:34:38.379  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:39:38.400  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:41:04.654 DEBUG 11684 --- [http-nio-8030-exec-10] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:41:04.663 TRACE 11684 --- [http-nio-8030-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 11:43:41.257 DEBUG 11684 --- [http-nio-8030-exec-2] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 11:43:41.265 TRACE 11684 --- [http-nio-8030-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 11:44:38.406  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:49:38.414  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:54:38.425  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 11:59:38.430  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:04:38.439  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:09:38.456  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:14:38.466  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:19:38.478  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:24:38.481  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:29:38.492  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:34:38.495  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:39:38.500  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:44:38.503  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:49:38.514  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:54:38.529  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 12:59:38.535  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 13:04:38.547  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 13:09:38.552  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 13:14:38.561  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 13:59:52.453  WARN 11684 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m15s142ms942µs900ns).
+2024-01-05 14:01:23.705  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 14:06:23.708  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 14:11:23.721  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 14:16:23.728  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 14:43:13.433  WARN 11684 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m50s702ms868µs700ns).
+2024-01-05 14:47:44.436  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 14:52:44.443  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 14:57:44.452  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:02:44.458  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:07:44.466  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:12:44.474  INFO 11684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:18:18.552  INFO 5240 --- [main] c.r.service.RatingServiceApplication     : Starting RatingServiceApplication using Java 11.0.15 on Ashwin-DESKTOP-89R6KLU with PID 5240 (C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\Microservice Project\microservice_rating_service\target\classes started by ashwin in C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\Microservice Project\microservice_rating_service)
+2024-01-05 15:18:18.559  INFO 5240 --- [main] c.r.service.RatingServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-05 15:18:19.962  INFO 5240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-05 15:18:20.528  INFO 5240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 533 ms. Found 1 JPA repository interfaces.
+2024-01-05 15:18:21.206  INFO 5240 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1b9dbfb8-341b-375f-b62d-9796ca3787d3
+2024-01-05 15:18:21.995  INFO 5240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8030 (http)
+2024-01-05 15:18:22.017  INFO 5240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-05 15:18:22.017  INFO 5240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-01-05 15:18:22.327  INFO 5240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-05 15:18:22.327  INFO 5240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3670 ms
+2024-01-05 15:18:22.714  INFO 5240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-05 15:18:22.833  INFO 5240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-05 15:18:23.248  INFO 5240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-05 15:18:23.437  INFO 5240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-05 15:18:23.765  INFO 5240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-05 15:18:23.805  INFO 5240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-01-05 15:18:25.148  INFO 5240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-05 15:18:25.162  INFO 5240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-05 15:18:25.831  WARN 5240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-05 15:18:26.874  INFO 5240 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-01-05 15:18:27.357  WARN 5240 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-01-05 15:18:27.455  INFO 5240 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-01-05 15:18:27.517  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-01-05 15:18:27.524  INFO 5240 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:18:27.566  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-01-05 15:18:27.567  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-01-05 15:18:27.567  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-01-05 15:18:27.567  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-01-05 15:18:27.568  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-01-05 15:18:27.568  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-01-05 15:18:27.568  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-01-05 15:18:28.241  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-01-05 15:18:28.248  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-01-05 15:18:28.256  INFO 5240 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-01-05 15:18:28.275  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1704448108273 with initial instances count: 1
+2024-01-05 15:18:28.282  INFO 5240 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RATING-SERVICE with eureka with status UP
+2024-01-05 15:18:28.285  INFO 5240 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1704448108285, current=UP, previous=STARTING]
+2024-01-05 15:18:28.292  INFO 5240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030: registering service...
+2024-01-05 15:18:28.379  INFO 5240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8030 (http) with context path ''
+2024-01-05 15:18:28.381  INFO 5240 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8030
+2024-01-05 15:18:28.449  INFO 5240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - registration status: 204
+2024-01-05 15:18:28.931  INFO 5240 --- [main] c.r.service.RatingServiceApplication     : Started RatingServiceApplication in 12.847 seconds (JVM running for 15.438)
+2024-01-05 15:20:28.540  INFO 5240 --- [http-nio-8030-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-05 15:20:28.548  INFO 5240 --- [http-nio-8030-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-05 15:20:28.573  INFO 5240 --- [http-nio-8030-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2024-01-05 15:20:29.110 DEBUG 5240 --- [http-nio-8030-exec-1] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 15:20:29.126 TRACE 5240 --- [http-nio-8030-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 15:20:40.395 DEBUG 5240 --- [http-nio-8030-exec-2] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 15:20:40.399 TRACE 5240 --- [http-nio-8030-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [0eedc082-2d17-48da-8665-3ab12673861f]
+2024-01-05 15:20:48.512 DEBUG 5240 --- [http-nio-8030-exec-3] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 15:20:48.519 TRACE 5240 --- [http-nio-8030-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [3a4dcaf6-0a97-4f29-b791-c69eebd7281f]
+2024-01-05 15:20:54.914 DEBUG 5240 --- [http-nio-8030-exec-10] org.hibernate.SQL                        : 
+    select
+        ratings0_.id as id1_0_,
+        ratings0_.feedback as feedback2_0_,
+        ratings0_.hotel_id as hotel_id3_0_,
+        ratings0_.rating as rating4_0_,
+        ratings0_.user_id as user_id5_0_ 
+    from
+        micro_ratings ratings0_ 
+    where
+        ratings0_.user_id=?
+2024-01-05 15:20:54.917 TRACE 5240 --- [http-nio-8030-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [2be64c74-89a8-4c45-8164-c276647fbe38]
+2024-01-05 15:23:27.586  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:28:27.611  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:33:27.629  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:38:27.647  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:43:27.664  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:48:27.694  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:53:27.710  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 15:58:27.750  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:03:27.759  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:06:00.996  INFO 5240 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - Re-registering apps/RATING-SERVICE
+2024-01-05 16:06:01.000  INFO 5240 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030: registering service...
+2024-01-05 16:06:01.041  INFO 5240 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - registration status: 204
+2024-01-05 16:08:27.771  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:13:27.776  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:18:27.787  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:23:27.803  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:28:27.822  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:33:27.829  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:38:27.837  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:43:27.840  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:48:27.848  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:53:27.857  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 16:58:27.869  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 17:03:27.880  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 17:34:33.402  WARN 5240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m7s555ms363µs).
+2024-01-05 17:37:05.407  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 17:42:05.415  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 17:47:05.429  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 17:52:05.449  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 17:57:05.451  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:02:05.463  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:07:05.472  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:12:05.482  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:17:05.495  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:22:05.517  INFO 5240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:24:17.219  INFO 5240 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - Re-registering apps/RATING-SERVICE
+2024-01-05 18:24:17.226  INFO 5240 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030: registering service...
+2024-01-05 18:24:17.638  INFO 5240 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - registration status: 204
+2024-01-05 18:24:47.447  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-01-05 18:24:47.449  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-01-05 18:24:47.449  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-01-05 18:24:47.449  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-01-05 18:24:47.449  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-01-05 18:24:47.449  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-01-05 18:24:47.449  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-01-05 18:24:47.576  INFO 5240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-01-05 18:29:55.490  INFO 14180 --- [main] c.r.service.RatingServiceApplication     : Starting RatingServiceApplication using Java 11.0.15 on Ashwin-DESKTOP-89R6KLU with PID 14180 (C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\Microservice Project\microservice_rating_service\target\classes started by ashwin in C:\Ashwin\Professional\Wokspaces\Eclipse-Workspace\All In One\Microservice Project\microservice_rating_service)
+2024-01-05 18:29:55.500  INFO 14180 --- [main] c.r.service.RatingServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-05 18:29:56.466  INFO 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-05 18:29:56.691  INFO 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 1 JPA repository interfaces.
+2024-01-05 18:29:56.969  INFO 14180 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1b9dbfb8-341b-375f-b62d-9796ca3787d3
+2024-01-05 18:29:57.436  INFO 14180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8030 (http)
+2024-01-05 18:29:57.452  INFO 14180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-05 18:29:57.452  INFO 14180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-01-05 18:29:57.622  INFO 14180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-05 18:29:57.622  INFO 14180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2055 ms
+2024-01-05 18:29:57.851  INFO 14180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-05 18:29:57.932  INFO 14180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-05 18:29:58.166  INFO 14180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-05 18:29:58.339  INFO 14180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-05 18:29:58.691  INFO 14180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-05 18:29:58.729  INFO 14180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-01-05 18:29:59.854  INFO 14180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-05 18:29:59.869  INFO 14180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-05 18:30:00.403  WARN 14180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-05 18:30:01.132  INFO 14180 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-01-05 18:30:01.536  WARN 14180 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-01-05 18:30:01.622  INFO 14180 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-01-05 18:30:01.679  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-01-05 18:30:01.687  INFO 14180 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-01-05 18:30:01.731  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-01-05 18:30:02.210  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-01-05 18:30:02.214  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-01-05 18:30:02.220  INFO 14180 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-01-05 18:30:02.229  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1704459602228 with initial instances count: 3
+2024-01-05 18:30:02.233  INFO 14180 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RATING-SERVICE with eureka with status UP
+2024-01-05 18:30:02.234  INFO 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1704459602234, current=UP, previous=STARTING]
+2024-01-05 18:30:02.237  INFO 14180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030: registering service...
+2024-01-05 18:30:02.314  INFO 14180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8030 (http) with context path ''
+2024-01-05 18:30:02.316  INFO 14180 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8030
+2024-01-05 18:30:02.354  INFO 14180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING-SERVICE/Ashwin-DESKTOP-89R6KLU:RATING-SERVICE:8030 - registration status: 204
+2024-01-05 18:30:02.571  INFO 14180 --- [main] c.r.service.RatingServiceApplication     : Started RatingServiceApplication in 8.016 seconds (JVM running for 10.341)
+2024-01-05 18:35:01.741  INFO 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-01-05 18:40:01.750  INFO 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

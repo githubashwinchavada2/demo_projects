@@ -1,0 +1,52 @@
+# Changing server port
+server:
+  port: 8080
+
+spring:
+
+# Database configuration for MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_demo?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# JPA configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL57Dialect
+
+# spring security details
+  security:
+    user:
+      name: root
+      password: root
+
+# To print logs
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+#        orm:
+#          jdbc:
+#            bind: trace
+          descriptor:
+            sql:
+              BasicBinder: trace
+  file:
+    name: logs\app-loggers.log
+
+# Swagger configuration
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    docExpansion: false

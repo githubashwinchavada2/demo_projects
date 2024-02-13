@@ -1,0 +1,6 @@
+# YML file configuration
+spring:
+  profiles:
+   include:
+    - dev
+#    - qa

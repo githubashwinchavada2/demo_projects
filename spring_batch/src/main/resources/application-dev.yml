@@ -1,0 +1,62 @@
+# Changing server port
+server:
+  port: 8080
+
+spring:
+
+# Maximum file size & request size
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# Spring batch configuration
+  batch:
+    job:
+      enabled: true # By default it's true which means all the Spring batches will start executing automatically
+    jdbc:
+      initialize-schema: always # Tables for metadata created by Spring Boot (Always, Embedded, Never)
+
+# Database configuration for MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_demo?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# JPA configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL57Dialect
+
+# spring security details
+#  security:
+#    user:
+#      name: root
+#      password: root
+
+# To print logs
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+#        orm:
+#          jdbc:
+#            bind: trace
+          descriptor:
+            sql:
+              BasicBinder: trace
+  file:
+    name: logs\app-loggers.log
+
+# Swagger configuration
+springfox:
+  documentation:
+    enabled: true

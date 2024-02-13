@@ -1,0 +1,52 @@
+# Changing server port
+server:
+  port: 8030
+
+# Configuration for microservice service registry (eureka server)
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true # by default it will be true even if don't write this line
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8080/eureka
+
+# Configuration for OKTA for user service
+okta:
+  oauth2:
+    issuer: https://dev-45361875.okta.com/oauth2/default
+    audience: api://default
+
+spring:
+
+# Configuration to select yml file from Config Server (GitHub)
+#  profiles:
+#    active: DEV
+
+# Application name configuration (this name will be displayed in microservice's eureka server as a service)
+  application:
+    name: HOTEL-SERVICE
+
+# Configuration to use centralized configuration (yml) file from Config Server (GitHub)
+  config:
+    import: optional:configserver:http://localhost:8082
+
+# Database configuration for MSSQL
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=springboot_demo;encrypt=true;trustServerCertificate=true;
+#    or jdbc:sqlserver://Ashwin-DESKTOP-89R6KLU;databaseName=springboot_demo;encrypt=true;trustServerCertificate=true;
+#    or jdbc:sqlserver://Ashwin-DESKTOP-;databaseName=springboot_demo;encrypt=true;trustServerCertificate=true;
+    username: sa
+    password: root
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# JPA configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServerDialect

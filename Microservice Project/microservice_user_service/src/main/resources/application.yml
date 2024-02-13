@@ -1,0 +1,124 @@
+# Changing server port
+server:
+  port: 8010
+
+# Configuration for microservice service registry (eureka server)
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true # by default it will be true even if don't write this line
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8080/eureka
+
+# Configuration for OKTA for user service
+okta:
+  oauth2:
+    issuer: https://dev-45361875.okta.com/oauth2/default
+    audience: api://default
+
+spring:
+
+# Configuration to select yml file from Config Server (GitHub)
+#  profiles:
+#    active: dev
+
+# Configuration for Application Name (this name will be displayed in microservice's eureka server as a service)
+  application:
+    name: USER-SERVICE
+
+# Configuration to use centralized configuration (yml) file from Config Server (GitHub)
+  config:
+    import: optional:configserver:http://localhost:8082
+
+# Configuration for OKTA for user service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-45361875.okta.com/oauth2/default
+      client:
+        registration:
+          my-internal-client:
+            provider: okta
+            authorization-grant-type: client_credentials
+            client-id: 0oaec0bmiaaKBFkUs5d7
+            client-secret: Yrp_VmGO_uS49IJ9o8kmA1cGm4IFT-IOc-owQd4lHAbu0glduQiMgR0f1HbSOZbK
+            scope: internal
+        provider:
+          okta:
+            issuer-uri: https://dev-45361875.okta.com/oauth2/default
+
+# Database configuration for MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_demo?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# JPA configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL57Dialect
+
+# Configuration for Actuator
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+# Configuration for Resilience -> https://resilience4j.readme.io/docs/getting-started
+# https://github.com/resilience4j/resilience4j-spring-boot2-demo/blob/master/src/main/resources/application.yml
+resilience4j:
+
+# Configuration for circuitbreaker -> https://resilience4j.readme.io/docs/circuitbreaker
+  circuitbreaker:
+    configs:
+        default:
+          registerHealthIndicator: true
+          eventConsumerBufferSize: 10
+          failureRateThreshold: 50
+          minimumNumberOfCalls: 5
+          automaticTransitionFromOpenToHalfOpenEnabled: true
+          waitDurationInOpenState: 5s
+          permittedNumberOfCallsInHalfOpenState: 3
+          slidingWindowSize: 10
+          slidingWindowType: COUNT_BASED
+    instances:
+      ratingHotelBreaker:
+        baseConfig: default
+
+# Configuration for retry -> https://resilience4j.readme.io/docs/retry
+  retryCount: 1
+  retry:
+    configs:
+        default:
+            maxAttempts: 3
+            waitDuration: 3s
+    instances:
+      ratingHotelService:
+        baseConfig: default
+
+# Configuration for rate limiter -> https://resilience4j.readme.io/docs/ratelimiter
+  ratelimiter:
+    configs:
+      default:
+        limitForPeriod: 2
+        limitRefreshPeriod: 4s
+        timeoutDuration: 0s
+    instances:
+      userRateLimiter:
+        baseConfig: default
