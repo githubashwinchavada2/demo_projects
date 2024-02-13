@@ -4,4 +4,3 @@ spring:
    include:
     - dev
 #    - qa
-#    - uat
