@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8182/realms/testrealm
+          jwk-set-uri: ${spring.security.oauth2.resource-server.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resourceId: test-rest-api
+      principalAttribute: preferred_username
